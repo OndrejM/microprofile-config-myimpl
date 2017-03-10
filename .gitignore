@@ -1,5 +1,11 @@
 *.class
 
+# maven
+/target/
+
+#netbeans
+nbproject/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
