@@ -19,9 +19,10 @@
             <version>1.2</version>
         </dependency>
         <dependency>
-            <groupId>io.microprofile.incubator.api</groupId>
-            <artifactId>microprofile-config-api</artifactId>
+            <groupId>org.eclipse.microprofile.config.tck</groupId>
+            <artifactId>microprofile-config-tck</artifactId>
             <version>${project.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.hamcrest</groupId>
@@ -58,11 +59,6 @@
             <version>2.4.1.Final</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.jboss.shrinkwrap</groupId>
-            <artifactId>shrinkwrap-api</artifactId>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -84,7 +80,7 @@
                 <version>2.19.1</version>
                 <configuration>
                     <dependenciesToScan>
-                        <!--<dependency>io.microprofile.incubator.tck:microprofile-config-tck</dependency>-->
+                        <dependency>org.eclipse.microprofile.config.tck:microprofile-config-tck</dependency>
                     </dependenciesToScan>
                 </configuration>            
             </plugin>
